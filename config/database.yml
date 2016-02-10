@@ -1,0 +1,16 @@
+# will contain our sqlite database configuration and to connect to database
+sqlite: &sqlite
+  host: 127.0.0.1
+  adapter: sqlite3
+
+development:
+  <<: *sqlite
+  database: db/development.sqlite3
+
+production:
+  <<: *sqlite
+  database: db/production.sqlite3
+
+test:
+  <<: *sqlite
+  database: db/test.sqlite3
