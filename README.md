@@ -1,4 +1,4 @@
-### Hello world!
+## Hello world!
 This is my first Sinatra app! It is similar to the Rails Girls Ideas app, but using Sinatra instead of Rails!
 
 #### Resources
