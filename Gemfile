@@ -5,7 +5,15 @@ gem "sinatra"
 # run automated tasks, like creating and migrating the database
 gem "rake"
 # is the database we will be using to store data
-gem "sqlite3"
+
+group :development do
+  gem 'sqlite3'
+end
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
 # is the interface the app uses to communicate with the database
 gem "activerecord"
 # is a bridge that allows us to use Active Record in a Sinatra application
