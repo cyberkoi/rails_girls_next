@@ -6,7 +6,7 @@ require 'bundler'
 Bundler.require 
 # adds the entire project to $LOAD_PATH. This allows Sinatra to find all files 
 # you've added to your project
-$: << File.expand.path('../', __FILE__)
+$: << File.expand_path('../', __FILE__)
 # Explicitly requires each file found in our model, view and controller folders
 Dir['./app/**/*.rb'].sort.each { |file| require file }
 
